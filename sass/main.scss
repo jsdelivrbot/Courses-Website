@@ -1,0 +1,102 @@
+// variable
+$mainColor: #fdc735;
+$primaryColor: #333;
+$mainColor-hover: #fdd25d;
+$mainColor-border: #e3b32f;
+$border-color: #ddd;
+$whiteColor: #fff;
+$fontPrimaryColor: #a4a4a4;
+$radius: 5px;
+
+// Main Style
+*{
+	padding: 0px;
+	border: 0px;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Droid Sans', sans-serif;
+	background-color: $whiteColor;
+}
+h1,h2,h3,h4,h5,h6,p {
+	font-family: 'Droid Sans', sans-serif;
+
+}
+a{
+	&:hover{
+	text-decoration: none;
+	}
+}
+
+section,footer{
+	position: relative;
+	top: -150px;
+}
+
+section {
+	padding: 50px 0px;
+}
+.section-header{
+	color: $primaryColor;
+	padding: 20px 0px;
+	text-transform: uppercase;
+	text-align: center;
+	h1{
+		font-weight: bold;
+	}
+}
+.section-content{
+	text-align: center;
+}
+// buttons
+.btn{
+	background-color: transparent;
+	border-radius: 0px;
+	border: 3px solid $mainColor;
+	color: $whiteColor;
+}
+
+// hover Effect
+/* Sweep To Right */
+.hvr-sweep-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $mainColor;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+  color: white;
+}
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}

@@ -1,0 +1,301 @@
+@import "main";
+
+
+// bootstrap re-design
+.navbar-default {
+	background-color: transparent;
+	border-radius: 0px;
+	border: 0px;
+	#top-nav{
+		background-color: $primaryColor;
+		padding: 0px;
+		.collapse{
+			.navbar-nav{
+				li {
+					a{
+						font-size: 14px;
+						color: $fontPrimaryColor;
+						padding: 10px;
+						&:hover, &:focus{
+							color: $whiteColor;
+						}
+					}
+				}
+			}
+		}
+		#sign-in, #sign-up{
+			.modal{
+				.modal-header{
+					background-color: $mainColor;
+					.modal-title{
+						color: $primaryColor;
+						font-size: 24px;
+					}
+				}
+				.modal-body{
+					.btn-group{
+						.btn-primary{
+							border:1px solid $mainColor-border;
+							background-color: $mainColor;
+							&:hover, &:focus{
+								background-color: $mainColor-hover;
+							}
+						}
+					}
+					.input-group{
+						margin-top:20px;
+						margin-bottom: 20px;
+
+						p{
+							color: $primaryColor;
+							input{
+								border: 1px solid $border-color;
+								border-radius: $radius;
+								padding-top: 20px;
+								padding-bottom: 20px;
+							}
+						}
+					}
+				}
+				.modal-footer{
+					.btn-primary{
+						border:1px solid $mainColor-border;
+						background-color: $mainColor;
+						&:hover, &:focus{
+							background-color: $mainColor-hover;
+						}
+					}
+				}
+			}
+		}
+		#sign-up{
+			.modal-body{
+				.input-group:nth-child(7){
+					p{
+						input{
+							border: 0px;
+						}
+					}
+				}
+			}
+		}
+
+	}
+	#bottom-nav{
+		position: relative;
+		z-index: 99999;
+		padding: 25px 0px;
+		.navbar-header{
+			a{
+				font-size: 28px;
+				color: $whiteColor;
+			}
+		}
+		.navbar-collapse{
+			.navbar-right{
+				li {
+					margin: 0px 15px;
+					a{
+						font-size: 16px;
+						font-weight: bold;
+						color: $whiteColor;
+						border-bottom: 3px solid transparent;
+						padding: 10px 5px;
+						transition: all 0.5s ease-in-out;
+						&:hover, &:focus{
+							border-bottom: 3px solid $mainColor;
+						}
+					}
+				}
+				button{
+					margin-top: 4px;
+					i{
+						color: $mainColor;
+					}
+					&:hover{
+						i{
+							color: $whiteColor;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+// header Section
+#header{
+	position: relative;
+	top: -120px;
+	overflow: hidden;
+	margin: 0px;
+	.container-fluid{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.single-item{
+		.slick-dots {
+			margin: 0 auto;
+			bottom: 50px;
+		}
+		#slider-1, #slider-2, #slider-3{
+			padding: 180px 0px;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			color: $whiteColor;
+			h1{
+				color: $mainColor;
+				font-size: 64px;
+				font-weight: bold;
+				text-transform: uppercase;
+				line-height: 1;
+			}
+			p{
+				font-size: 28px;
+				margin-bottom: 40px;
+			}
+			button{
+				border-color: $whiteColor;
+				padding: 10px 30px;
+				margin-top: 30px;
+				font-size: 16px;
+				&:hover{
+					border-color: $mainColor;
+				}
+			}
+		}
+		#slider-1{
+			background-image: url(../img/header-slider-1.jpg);
+		}
+		#slider-2{
+			background-image: url(../img/header-slider-2.jpg);
+		}
+		#slider-3{
+			background-image: url(../img/header-slider-3.jpg);
+		}
+	}
+}
+
+
+// Welcome Section
+#welcome{
+	.section-header{
+		text-align: left;
+		padding: 0px 20px 0px 0px;
+		margin-top: 50px;
+		h1{
+			color: $primaryColor;
+			font-weight: normal;
+			margin-bottom: 30px;
+			span{
+				font-weight: bold;
+			}
+		}
+		p{
+			color:$fontPrimaryColor;
+			text-transform: lowercase;
+			margin:30px 0px;
+		}
+	}
+	.section-content{
+		iframe{
+			margin-top: 50px;
+		}
+	}
+}
+
+
+// Popular Courses Section
+#popular-courses{
+	.section-content{
+		.multiple-items{
+			.course-img{
+				img{
+					opacity: 1;
+					transition: all 0.5s ease-in-out;
+					&:hover{
+						opacity: 0.75;
+					}
+				}
+			}
+			.course-name{
+				text-align: left;
+				text-transform: capitalize;
+				border: 1px solid $border-color;
+				h3 {
+					padding-left: 20px;
+					a{
+						color: $primaryColor;
+						font-weight: bold;
+						&:hover, &:focus{
+							color: $mainColor-border;
+						}
+					}
+				}
+				p{
+					font-weight: normal;
+					color: $mainColor-border;
+					padding-left: 20px;
+				}
+			}
+			.course-user-interactive{
+				text-align: left;
+				border-left: 1px solid $border-color;
+				border-bottom: 1px solid $border-color;
+				border-right: 1px solid $border-color;
+				#interactive-left{
+					ul{
+						padding: 7px 0px 0px 10px;
+						list-style: none;
+						li{
+							color: $fontPrimaryColor;
+							display: inline;
+							margin: 0px 10px;
+							i{
+								margin-right: 5px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+// Achievement Section
+#achievement{
+	background-image: url(../img/achevement-bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	.section-header{
+		h1{
+			color: $whiteColor;
+		}
+	}
+	.section-content{
+		div{
+			img{
+				width: 70px;
+				height: 70px;
+			}
+			h1{
+				font-size: 58px;
+				color: $mainColor;
+				font-weight: bold;
+			}
+			p{
+				color: $whiteColor;
+				font-weight: bold;
+				font-size: 18px;
+			}
+		}
+		button {
+			margin-top: 50px;
+			font-size: 20px;
+		}
+	}
+}

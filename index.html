@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- IE Combitability Meta -->
+            <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Mobile First Meta -->
+
+					 <title></title>
+
+            <link rel="stylesheet" href="css/bootstrap.css"> <!-- Latest compiled and minified CSS -->
+			<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/animate.css"> <!-- Animate.CSS File -->
+			<link rel="stylesheet" type="text/css" href="slick/slick.css"/><!-- Slick.css Carousel -->
+			<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"><!-- Slick.css Carousel -->
+			<link rel="stylesheet" href="css/main.css"> <!-- my framework CSS File -->
+			<link rel="stylesheet" href="css/style.css"> <!-- CSS File -->
+			<link rel="stylesheet" href="css/media.css"> <!-- Media Query File -->
+			<link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+	        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	        <!--[if lt IE 9]>
+	        <script src="js/html5shiv.min.js"></script>
+	        <script src="js/respond.min.js"></script>
+	        <![endif]-->
+        </head>
+        <body>
+			<nav class="navbar navbar-default">
+				<div id="top-nav">
+					<div class="container-fluid">
+						<div class="navbar-header">
+					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					      </button>
+					    </div>
+
+					    <!-- Collect the nav links, forms, and other content for toggling -->
+					    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					      <ul class="nav navbar-nav navbar-right">
+					        <li><a href="#" data-toggle="modal" data-target="#sign-in-modal">Sign In</a></li>
+					        <li><a href="#" data-toggle="modal" data-target="#sign-up-modal">Sign Up</a></li>
+					      </ul>
+					    </div><!-- /.navbar-collapse -->
+						<div id="sign-in">
+							<div class="modal fade" id="sign-in-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+							  <div class="modal-dialog" role="document">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							        <h4 class="modal-title" id="myModalLabel">Sign In</h4>
+							      </div>
+							      <div class="modal-body">
+									  <div class="btn-group" data-toggle="buttons">
+										  <label class="btn btn-primary">
+										    <input type="checkbox" autocomplete="off" > Admin
+										  </label>
+										  <label class="btn btn-primary">
+										    <input type="checkbox" autocomplete="off"> User
+										  </label>
+									  </div>
+
+									  <div class="input-group col-xs-12">
+										  <p><input type="text" class="form-control" name="username" placeholder="Username" aria-describedby="basic-addon1"></p>
+
+									  </div>
+
+									  <div class="input-group col-xs-12">
+										  <p><input type="text" class="form-control" name="psw" placeholder="password" aria-describedby="basic-addon1"></p>
+									  </div>
+
+									    <p><input type="checkbox" aria-label="..."> Remember Me</p>
+									  <!-- /input-group -->
+
+									  <a href="#">forget password</a>
+
+							      </div>
+							      <div class="modal-footer">
+							        <button type="submit" class="btn btn-primary">Sign In</button>
+							      </div>
+							    </div>
+							  </div>
+							</div>
+						</div>
+						<div id="sign-up">
+							<div class="modal fade" id="sign-up-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+							  <div class="modal-dialog" role="document">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							        <h4 class="modal-title" id="myModalLabel">Sign Up</h4>
+							      </div>
+							      <div class="modal-body">
+								    <div class="input-group col-xs-12">
+										<p><input type="text" class="form-control" placeholder="First Name" name="firstname" aria-describedby="basic-addon1"></p>
+									</div>
+
+									<div class="input-group col-xs-12">
+		  								<p><input type="text" class="form-control" placeholder="Last Name" name="lastname"aria-describedby="basic-addon1"></p>
+		  							</div>
+
+									<div class="input-group col-xs-12">
+		  								<p><input type="text" class="form-control" placeholder="Username" name="username" aria-describedby="basic-addon1"></p>
+		  							</div>
+
+									<div class="input-group col-xs-12">
+		  								<p><input type="text" class="form-control" placeholder="Password" name="psw" aria-describedby="basic-addon1"></p>
+		  							</div>
+
+									<div class="input-group col-xs-12">
+		  								<p><input type="text" class="form-control" placeholder="confirm Password" name="psw" aria-describedby="basic-addon1"></p>
+		  							</div>
+
+									<div class="input-group col-xs-12">
+		  								<p><input type="text" class="form-control" name="email" placeholder="emain" aria-describedby="basic-addon1"></p>
+		  							</div>
+
+									<div class="input-group">
+		  								<p>Profile Picture: <br/>
+										<input type="file" class="img" name="email" aria-describedby="basic-addon1">
+		  							</div>
+
+							      </div>
+							      <div class="modal-footer">
+							        <button type="submit" class="btn btn-primary">Sign Up</button>
+							      </div>
+							    </div>
+							  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="bottom-nav">
+					<div class="container">
+						<!-- Brand and toggle get grouped for better mobile display -->
+					    <div class="navbar-header">
+					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					      </button>
+					      <a class="navbar-brand" href="#">BrandName</a>
+					    </div>
+
+					    <!-- Collect the nav links, forms, and other content for toggling -->
+					    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+					      <ul class="nav navbar-nav navbar-right">
+					        <li><a href="index.html" class="act">Home</a></li>
+					        <li><a href="courses.html">Courses</a></li>
+							<li><a href="blog.html">Blog</a></li>
+							<button class="btn hvr-sweep-to-right"><i class="fa fa-search" aria-hidden="true"></i></button>
+					      </ul>
+					    </div><!-- /.navbar-collapse -->
+					</div>
+				</div>
+
+			</nav> <!-- End Navbar -->
+
+			<header id="header">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="single-item col-xs-12">
+						    <div class="text-center" id="slider-1">
+								<h1>never stop learning</h1>
+								<p>are you ready?</p>
+								<button class="btn hvr-sweep-to-right">view courses</button>
+							</div>
+						    <div class="text-center" id="slider-2">
+								<h1>take the first step</h1>
+								<p>are you ready?</p>
+								<button class="btn hvr-sweep-to-right">view courses</button>
+							</div>
+						    <div class="text-center" id="slider-3">
+								<h1>take the first step</h1>
+								<p>are you ready?</p>
+								<button class="btn hvr-sweep-to-right">view courses</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header> <!-- End Header -->
+
+			<section id="welcome">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-xs-12 section-header" >
+							<h1>Welcome To <br><span>BrandName</span></h1>
+							<img src="img/line.png" alt="line">
+							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+								accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+								quae ab illo inventore veritatis et quasi architecto beatae vitae
+								dicta sunt explicabo.
+							</p>
+							<p>
+								Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+								accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+								quae ab illo inventore veritatis et quasi architecto beatae vitae
+								dicta sunt explicabo.
+							</p>
+						</div>
+						<div class="col-md-6 col-xs-12 section-content">
+								<iframe width="620" height="340" src="https://www.youtube.com/embed/i5qpS_D8Law" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="popular-courses">
+				<div class="container">
+					<div class="section-header">
+						<h1>popular courses</h1>
+						<img src="img/line.png" alt="line">
+					</div>
+					<div class="section-content">
+						<div class="row">
+							<div class="multiple-items col-xs-12">
+							    <div class="col-xs-4 text-center" id="slider-4">
+							    	<div class="course-img">
+							    		<img src="http://placehold.it/350x400" alt="" />
+							    	</div>
+									<div class="course-name">
+										<h3><a href="#">Web Development</a></h3>
+										<p>instructor name</p>
+									</div>
+									<div class="course-user-interactive">
+										<div id="interactive-left">
+											<ul>
+												<li><i class="fa fa-comment" aria-hidden="true"></i>4</li>
+												<li><i class="fa fa-user" aria-hidden="true"></i>200</li>
+											</ul>
+										</div>
+									</div>
+							    </div>
+							    <div class="col-xs-4 text-center" id="slider-5">
+							    	<div class="course-img">
+							    		<img src="http://placehold.it/350x400" alt="" />
+							    	</div>
+									<div class="course-name">
+										<h3><a href="#">Web DEsign</a></h3>
+										<p>instructor name</p>
+									</div>
+									<div class="course-user-interactive">
+										<div id="interactive-left">
+											<ul>
+												<li><i class="fa fa-comment" aria-hidden="true"></i>5</li>
+												<li><i class="fa fa-user" aria-hidden="true"></i>300</li>
+											</ul>
+										</div>
+									</div>
+							    </div>
+							    <div class="col-xs-4 text-center" id="slider-6">
+							    	<div class="course-img">
+							    		<img src="http://placehold.it/350x400" alt="" />
+							    	</div>
+									<div class="course-name">
+										<h3><a href="#">Mobile Application</a></h3>
+										<p>instructor name</p>
+									</div>
+									<div class="course-user-interactive">
+										<div id="interactive-left">
+											<ul>
+												<li><i class="fa fa-comment" aria-hidden="true"></i>10</li>
+												<li><i class="fa fa-user" aria-hidden="true"></i>1000</li>
+											</ul>
+										</div>
+									</div>
+							    </div>
+								<div class="col-xs-4 text-center" id="slider-7">
+							    	<div class="course-img">
+							    		<img src="http://placehold.it/350x400" alt="" />
+							    	</div>
+									<div class="course-name">
+										<h3><a href="#">IOS Development</a></h3>
+										<p>instructor name</p>
+									</div>
+									<div class="course-user-interactive">
+										<div id="interactive-left">
+											<ul>
+												<li><i class="fa fa-comment" aria-hidden="true"></i>5</li>
+												<li><i class="fa fa-user" aria-hidden="true"></i>300</li>
+											</ul>
+										</div>
+									</div>
+							    </div>
+								<div class="col-xs-4 text-center" id="slider-8">
+							    	<div class="course-img">
+							    		<img src="http://placehold.it/350x400" alt="" />
+							    	</div>
+									<div class="course-name">
+										<h3><a href="#">Game Development</a></h3>
+										<p>instructor name</p>
+									</div>
+									<div class="course-user-interactive">
+										<div id="interactive-left">
+											<ul>
+												<li><i class="fa fa-comment" aria-hidden="true"></i>5</li>
+												<li><i class="fa fa-user" aria-hidden="true"></i>300</li>
+											</ul>
+										</div>
+									</div>
+							    </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section id="achievement">
+				<div class="container">
+					<div class="section-header">
+						<h1>achievement</h1>
+						<img src="img/line.png" alt="line">
+					</div>
+					<div class="section-content row">
+						<div class="col-xs-12 col-md-6 col-lg-3">
+							<img src="img/world-map.png" alt="" />
+							<h1 class="counter">94,532</h1>
+							<p>FOREIGN FOLLOWERS</p>
+						</div>
+						<div class="col-xs-12 col-md-6 col-lg-3">
+							<img src="img/ring.png" alt="" />
+							<h1 class="counter">11,223</h1>
+							<p>CLASSES COMPLETE</p>
+						</div>
+						<div class="col-xs-12 col-md-6 col-lg-3">
+							<img src="img/friend.png" alt="" />
+							<h1 class="counter">282,673</h1>
+							<p>STUDENTS ENROLLED</p>
+						</div>
+						<div class="col-xs-12 col-md-6 col-lg-3">
+							<img src="img/case.png" alt="" />
+							<h1 class="counter">37</h1>
+							<p>CERTIFIED TEACHERS</p>
+						</div>
+						<button class="btn hvr-sweep-to-right">Learn More</button>
+					</div>
+				</div>
+			</section>
+
+
+			<section id="articles">
+				<div class="container">
+					<div class="section-header">
+						<h1>Recent articles</h1>
+						<img src="img/line.png" alt="line">
+					</div>
+					<div class="section-content"></div>
+				</div>
+			</section>
+
+
+			<section id="courses-type">
+				<div class="container">
+					<div class="section-header">
+						<h1>you can learn</h1>
+						<img src="img/line.png" alt="line">
+					</div>
+					<div class="section-content"></div>
+				</div>
+			</section>
+
+
+			<footer id="footer">
+				<div class="container"></div>
+			</footer>
+
+
+
+
+
+
+
+
+			  <script src="js/jquery.min.js"></script> <!-- Jquery Mini file -->
+			  <script src="js/bootstrap.min.js"></script> <!-- Latest compiled and minified JavaScript -->
+			  <script src="js/wow.min.js"></script> <!-- WOW.js Mini file -->
+  			  <script>new WOW().init();</script> <!-- Activate WOW.js File -->
+			  <script type="text/javascript" src="slick/slick.min.js"></script><!-- Slick.js Carousel file -->
+			  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+              <script src="js/jquery.counterup.min.js"></script>
+			  <script src="js/script.js"></script> <!-- Externa Js File file - My File -->
+        </body>
+    </html>
