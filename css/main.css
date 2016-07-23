@@ -1,8 +1,6 @@
 * {
   padding: 0px;
   border: 0px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -17,6 +15,14 @@ h1, h2, h3, h4, h5, h6, p {
 
 a:hover {
   text-decoration: none;
+}
+
+img {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+img:hover, img:focus {
+  opacity: 0.75;
 }
 
 section, footer {
@@ -55,7 +61,6 @@ section {
   vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  -webkit-box-shadow: 0 0 1px transparent;
   box-shadow: 0 0 1px transparent;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -77,12 +82,10 @@ section {
   bottom: 0;
   background: #fdc735;
   -webkit-transform: scaleX(0);
-  -ms-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
-  -ms-transform-origin: 0 50%;
   transform-origin: 0 50%;
-  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-property: transform;
   transition-property: transform;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
@@ -96,6 +99,5 @@ section {
 
 .hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
   -webkit-transform: scaleX(1);
-  -ms-transform: scaleX(1);
   transform: scaleX(1);
 }
