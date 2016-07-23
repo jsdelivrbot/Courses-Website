@@ -299,3 +299,44 @@
 		}
 	}
 }
+
+// Recent Articla Section
+#articles{
+	.section-content{
+		.article-img{
+			img{
+				opacity: 1;
+				transition: all 0.5s ease-in-out;
+				&:hover{
+					opacity: 0.75;
+				}
+			}
+		}
+		.article-content{
+			text-align: left;
+			margin-top: 30px;
+			padding-right: 30px;
+			.date{
+				color: $mainColor;
+				font-weight: bold;
+				float: left;
+				span{
+					font-weight: normal;
+				}
+			}
+			.content{
+				float: left;
+				h3{
+					a{
+						color: $primaryColor;
+						text-transform: uppercase;
+						font-weight: bold;
+						&:hover, &:focus{
+							color: $mainColor;
+						}
+					}
+				}
+			}
+		}
+	}
+}

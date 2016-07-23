@@ -1,8 +1,6 @@
 * {
   padding: 0px;
   border: 0px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -55,7 +53,6 @@ section {
   vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  -webkit-box-shadow: 0 0 1px transparent;
   box-shadow: 0 0 1px transparent;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -77,12 +74,10 @@ section {
   bottom: 0;
   background: #fdc735;
   -webkit-transform: scaleX(0);
-  -ms-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
-  -ms-transform-origin: 0 50%;
   transform-origin: 0 50%;
-  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-property: transform;
   transition-property: transform;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
@@ -96,7 +91,6 @@ section {
 
 .hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
   -webkit-transform: scaleX(1);
-  -ms-transform: scaleX(1);
   transform: scaleX(1);
 }
 
@@ -172,7 +166,6 @@ section {
   color: white;
   border-bottom: 3px solid transparent;
   padding: 10px 5px;
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 .navbar-default #bottom-nav .navbar-collapse .navbar-right li a:hover, .navbar-default #bottom-nav .navbar-collapse .navbar-right li a:focus {
@@ -206,7 +199,6 @@ section {
   padding: 180px 0px;
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
   background-size: cover;
   color: white;
 }
@@ -264,7 +256,6 @@ section {
 
 #popular-courses .section-content .multiple-items .course-img img {
   opacity: 1;
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 #popular-courses .section-content .multiple-items .course-img img:hover {
@@ -313,7 +304,6 @@ section {
   background-image: url(../img/achevement-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
   background-size: cover;
 }
 #achievement .section-header h1 {
@@ -336,4 +326,36 @@ section {
 #achievement .section-content button {
   margin-top: 50px;
   font-size: 20px;
+}
+
+#articles .section-content .article-img img {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+#articles .section-content .article-img img:hover {
+  opacity: 0.75;
+}
+#articles .section-content .article-content {
+  text-align: left;
+  margin-top: 30px;
+  padding-right: 30px;
+}
+#articles .section-content .article-content .date {
+  color: #fdc735;
+  font-weight: bold;
+  float: left;
+}
+#articles .section-content .article-content .date span {
+  font-weight: normal;
+}
+#articles .section-content .article-content .content {
+  float: left;
+}
+#articles .section-content .article-content .content h3 a {
+  color: #333333;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#articles .section-content .article-content .content h3 a:hover, #articles .section-content .article-content .content h3 a:focus {
+  color: #fdc735;
 }
