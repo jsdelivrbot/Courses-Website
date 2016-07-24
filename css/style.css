@@ -1,6 +1,8 @@
 * {
   padding: 0px;
   border: 0px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -19,15 +21,11 @@ a:hover {
 
 img {
   opacity: 1;
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 img:hover, img:focus {
   opacity: 0.75;
-}
-
-section, footer {
-  position: relative;
-  top: -150px;
 }
 
 section {
@@ -61,6 +59,7 @@ section {
   vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
+  -webkit-box-shadow: 0 0 1px transparent;
   box-shadow: 0 0 1px transparent;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -82,10 +81,12 @@ section {
   bottom: 0;
   background: #fdc735;
   -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
+  -ms-transform-origin: 0 50%;
   transform-origin: 0 50%;
-  -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
   transition-property: transform;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
@@ -99,6 +100,7 @@ section {
 
 .hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
   -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
   transform: scaleX(1);
 }
 
@@ -157,13 +159,23 @@ section {
   border: 0px;
 }
 .navbar-default #bottom-nav {
+  background-color: #333333;
   position: relative;
-  z-index: 99999;
-  padding: 25px 0px;
+  z-index: 999;
+  padding: 15px 0px;
+}
+.navbar-default #bottom-nav .container {
+  border-top: 1px solid #dddddd;
+}
+.navbar-default #bottom-nav .navbar-header {
+  padding-top: 15px;
 }
 .navbar-default #bottom-nav .navbar-header a {
   font-size: 28px;
   color: white;
+}
+.navbar-default #bottom-nav .navbar-collapse .navbar-right {
+  padding-top: 15px;
 }
 .navbar-default #bottom-nav .navbar-collapse .navbar-right li {
   margin: 0px 15px;
@@ -174,6 +186,7 @@ section {
   color: white;
   border-bottom: 3px solid transparent;
   padding: 10px 5px;
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 .navbar-default #bottom-nav .navbar-collapse .navbar-right li a:hover, .navbar-default #bottom-nav .navbar-collapse .navbar-right li a:focus {
@@ -188,10 +201,20 @@ section {
 .navbar-default #bottom-nav .navbar-collapse .navbar-right button:hover i {
   color: white;
 }
+.navbar-default #bottom-nav .navbar-collapse .navbar-nav li .dropdown-menu {
+  background-color: #333333;
+  color: white;
+}
+.navbar-default #bottom-nav .navbar-collapse .navbar-nav li .dropdown-menu a {
+  color: white;
+}
+.navbar-default #bottom-nav .navbar-collapse .navbar-nav li .dropdown-menu a:hover, .navbar-default #bottom-nav .navbar-collapse .navbar-nav li .dropdown-menu a:active, .navbar-default #bottom-nav .navbar-collapse .navbar-nav li .dropdown-menu a:focus {
+  background-color: transparent;
+}
 
 #header {
   position: relative;
-  top: -120px;
+  top: -20px;
   overflow: hidden;
   margin: 0px;
 }
@@ -207,6 +230,7 @@ section {
   padding: 180px 0px;
   background-position: center;
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
   background-size: cover;
   color: white;
 }
@@ -264,6 +288,7 @@ section {
 
 #popular-courses .section-content .multiple-items .course-img img {
   opacity: 1;
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 #popular-courses .section-content .multiple-items .course-img img:hover {
@@ -312,6 +337,7 @@ section {
   background-image: url(../img/achevement-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
   background-size: cover;
 }
 #achievement .section-header h1 {
@@ -342,6 +368,7 @@ section {
 
 #articles .section-content .article-img img {
   opacity: 1;
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 #articles .section-content .article-img img:hover {

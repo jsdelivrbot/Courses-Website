@@ -35,10 +35,6 @@ img{
 	}
 }
 
-section,footer{
-	position: relative;
-	top: -150px;
-}
 
 section {
 	padding: 50px 0px;
@@ -106,4 +102,147 @@ section {
 .hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
+}
+
+// bootstrap re-design
+.navbar-default {
+	background-color: transparent;
+	border-radius: 0px;
+	border: 0px;
+	#top-nav{
+		background-color: $primaryColor;
+		padding: 0px;
+		.collapse{
+			.navbar-nav{
+				li {
+					a{
+						font-size: 14px;
+						color: $fontPrimaryColor;
+						padding: 10px;
+						&:hover, &:focus{
+							color: $whiteColor;
+						}
+					}
+				}
+			}
+		}
+		#sign-in, #sign-up{
+			.modal{
+				.modal-header{
+					background-color: $mainColor;
+					.modal-title{
+						color: $primaryColor;
+						font-size: 24px;
+					}
+				}
+				.modal-body{
+					.btn-group{
+						.btn-primary{
+							border:1px solid $mainColor-border;
+							background-color: $mainColor;
+							&:hover, &:focus{
+								background-color: $mainColor-hover;
+							}
+						}
+					}
+					.input-group{
+						margin-top:20px;
+						margin-bottom: 20px;
+
+						p{
+							color: $primaryColor;
+							input{
+								border: 1px solid $border-color;
+								border-radius: $radius;
+								padding-top: 20px;
+								padding-bottom: 20px;
+							}
+						}
+					}
+				}
+				.modal-footer{
+					.btn-primary{
+						border:1px solid $mainColor-border;
+						background-color: $mainColor;
+						&:hover, &:focus{
+							background-color: $mainColor-hover;
+						}
+					}
+				}
+			}
+		}
+		#sign-up{
+			.modal-body{
+				.input-group:nth-child(7){
+					p{
+						input{
+							border: 0px;
+						}
+					}
+				}
+			}
+		}
+
+	}
+	#bottom-nav{
+		background-color: $primaryColor;
+		position: relative;
+		z-index: 999;
+		padding: 15px 0px;
+		.container{
+			border-top: 1px solid $border-color;
+		}
+		.navbar-header{
+			padding-top: 15px;
+			a{
+				font-size: 28px;
+				color: $whiteColor;
+			}
+		}
+		.navbar-collapse{
+			.navbar-right{
+				padding-top: 15px;
+				li {
+					margin: 0px 15px;
+					a{
+						font-size: 16px;
+						font-weight: bold;
+						color: $whiteColor;
+						border-bottom: 3px solid transparent;
+						padding: 10px 5px;
+						transition: all 0.5s ease-in-out;
+						&:hover, &:focus{
+							border-bottom: 3px solid $mainColor;
+						}
+					}
+				}
+				button{
+					margin-top: 4px;
+					i{
+						color: $mainColor;
+					}
+					&:hover{
+						i{
+							color: $whiteColor;
+						}
+					}
+				}
+			}
+			.navbar-nav{
+				li{
+					.dropdown-menu{
+						background-color: $primaryColor;
+						color: $whiteColor;
+							a{
+								color: $whiteColor;
+								&:hover, &:active, &:focus{
+									background-color: transparent;
+
+								}
+						}
+					}
+				}
+			}
+		}
+	}
 }
