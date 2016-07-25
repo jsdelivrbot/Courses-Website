@@ -1,8 +1,6 @@
 * {
   padding: 0px;
   border: 0px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -16,7 +14,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 a {
-  -webkit-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
 }
 a:hover {
@@ -25,7 +22,6 @@ a:hover {
 
 img {
   opacity: 1;
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 img:hover, img:focus {
@@ -63,7 +59,6 @@ section {
   vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  -webkit-box-shadow: 0 0 1px transparent;
   box-shadow: 0 0 1px transparent;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -85,12 +80,10 @@ section {
   bottom: 0;
   background: #fdc735;
   -webkit-transform: scaleX(0);
-  -ms-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
-  -ms-transform-origin: 0 50%;
   transform-origin: 0 50%;
-  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-property: transform;
   transition-property: transform;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
@@ -104,7 +97,6 @@ section {
 
 .hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
   -webkit-transform: scaleX(1);
-  -ms-transform: scaleX(1);
   transform: scaleX(1);
 }
 
@@ -190,7 +182,6 @@ section {
   color: white;
   border-bottom: 3px solid transparent;
   padding: 10px 5px;
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 .navbar-default #bottom-nav .navbar-collapse .navbar-right li a:hover, .navbar-default #bottom-nav .navbar-collapse .navbar-right li a:focus {
@@ -264,196 +255,51 @@ section {
   margin-right: 10px;
 }
 
-#header {
-  position: relative;
-  top: -20px;
-  overflow: hidden;
-  margin: 0px;
+#web-design .blog-content, #web-develop .blog-content, #mobile-app .blog-content {
+  padding: 30px 0px;
 }
-#header .container-fluid {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-#header .single-item .slick-dots {
-  margin: 0 auto;
-  bottom: 50px;
-}
-#header .single-item #slider-1, #header .single-item #slider-2, #header .single-item #slider-3 {
-  padding: 180px 0px;
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
-  color: white;
-}
-#header .single-item #slider-1 h1, #header .single-item #slider-2 h1, #header .single-item #slider-3 h1 {
-  color: #fdc735;
-  font-size: 64px;
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 1;
-}
-#header .single-item #slider-1 p, #header .single-item #slider-2 p, #header .single-item #slider-3 p {
-  font-size: 28px;
-  margin-bottom: 40px;
-}
-#header .single-item #slider-1 button, #header .single-item #slider-2 button, #header .single-item #slider-3 button {
-  border-color: white;
-  padding: 10px 30px;
-  margin-top: 30px;
-  font-size: 16px;
-}
-#header .single-item #slider-1 button:hover, #header .single-item #slider-2 button:hover, #header .single-item #slider-3 button:hover {
-  border-color: #fdc735;
-}
-#header .single-item #slider-1 {
-  background-image: url(../img/header-slider-1.jpg);
-}
-#header .single-item #slider-2 {
-  background-image: url(../img/header-slider-2.jpg);
-}
-#header .single-item #slider-3 {
-  background-image: url(../img/header-slider-3.jpg);
-}
-
-#welcome .section-header {
-  text-align: left;
-  padding: 0px 20px 0px 0px;
-  margin-top: 50px;
-}
-#welcome .section-header h1 {
-  color: #333333;
-  font-weight: normal;
-  margin-bottom: 30px;
-}
-#welcome .section-header h1 span {
-  font-weight: bold;
-}
-#welcome .section-header p {
-  color: #a4a4a4;
-  text-transform: lowercase;
-  margin: 30px 0px;
-}
-#welcome .section-content iframe {
-  margin-top: 50px;
-}
-
-#popular-courses .section-content .multiple-items .course-img img {
-  opacity: 1;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-#popular-courses .section-content .multiple-items .course-img img:hover {
-  opacity: 0.75;
-}
-#popular-courses .section-content .multiple-items .course-name {
-  text-align: left;
-  text-transform: capitalize;
+#web-design .blog-content .article, #web-design .blog-content .recent, #web-develop .blog-content .article, #web-develop .blog-content .recent, #mobile-app .blog-content .article, #mobile-app .blog-content .recent {
+  background-color: white;
+  box-shadow: 5px 5px 8px #dddddd;
+  border-radius: 10px;
   border: 1px solid #dddddd;
 }
-#popular-courses .section-content .multiple-items .course-name h3 {
-  padding-left: 20px;
+#web-design .blog-content .recent, #web-develop .blog-content .recent, #mobile-app .blog-content .recent {
+  float: right;
 }
-#popular-courses .section-content .multiple-items .course-name h3 a {
-  color: #333333;
+#web-design .blog-content .recent h3, #web-develop .blog-content .recent h3, #mobile-app .blog-content .recent h3 {
+  padding: 10px 0px;
+}
+#web-design .blog-content .recent p, #web-develop .blog-content .recent p, #mobile-app .blog-content .recent p {
+  padding: 5px 0px;
+}
+#web-design .blog-content .recent p a:hover, #web-design .blog-content .recent p a:focus, #web-develop .blog-content .recent p a:hover, #web-develop .blog-content .recent p a:focus, #mobile-app .blog-content .recent p a:hover, #mobile-app .blog-content .recent p a:focus {
+  color: #fdc735;
+}
+#web-design .blog-content .article, #web-develop .blog-content .article, #mobile-app .blog-content .article {
+  float: left;
+}
+#web-design .blog-content .article .date, #web-develop .blog-content .article .date, #mobile-app .blog-content .article .date {
+  color: #fdc735;
+  float: right;
+  margin-top: 20px;
+}
+#web-design .blog-content .article h1, #web-develop .blog-content .article h1, #mobile-app .blog-content .article h1 {
   font-weight: bold;
+  padding: 10px 0px 10px 10px;
 }
-#popular-courses .section-content .multiple-items .course-name h3 a:hover, #popular-courses .section-content .multiple-items .course-name h3 a:focus {
-  color: #e3b32f;
+#web-design .blog-content .article img, #web-develop .blog-content .article img, #mobile-app .blog-content .article img {
+  width: 100%;
+  margin: 30px 0px;
 }
-#popular-courses .section-content .multiple-items .course-name p {
-  font-weight: normal;
-  color: #e3b32f;
-  padding-left: 20px;
-}
-#popular-courses .section-content .multiple-items .course-user-interactive {
-  text-align: left;
-  border-left: 1px solid #dddddd;
-  border-bottom: 1px solid #dddddd;
-  border-right: 1px solid #dddddd;
-}
-#popular-courses .section-content .multiple-items .course-user-interactive #interactive-left ul {
-  padding: 7px 0px 0px 10px;
-  list-style: none;
-}
-#popular-courses .section-content .multiple-items .course-user-interactive #interactive-left ul li {
+#web-design .blog-content .article p, #web-develop .blog-content .article p, #mobile-app .blog-content .article p {
+  padding: 10px 30px 10px 10px;
   color: #a4a4a4;
-  display: inline;
-  margin: 0px 10px;
 }
-#popular-courses .section-content .multiple-items .course-user-interactive #interactive-left ul li i {
-  margin-right: 5px;
+#web-design .blog-content .article button, #web-develop .blog-content .article button, #mobile-app .blog-content .article button {
+  margin: 20px 10px;
+  color: #fdc735;
 }
-
-#achievement {
-  background-image: url(../img/achevement-bg.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
-}
-#achievement .section-header h1 {
+#web-design .blog-content .article button:hover, #web-design .blog-content .article button:focus, #web-develop .blog-content .article button:hover, #web-develop .blog-content .article button:focus, #mobile-app .blog-content .article button:hover, #mobile-app .blog-content .article button:focus {
   color: white;
-}
-#achievement .section-content div img {
-  width: 70px;
-  height: 70px;
-}
-#achievement .section-content div h1 {
-  font-size: 58px;
-  color: #fdc735;
-  font-weight: bold;
-}
-#achievement .section-content div p {
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-}
-#achievement .section-content button {
-  color: #fdc735;
-  margin-top: 50px;
-  font-size: 20px;
-}
-#achievement .section-content button:hover {
-  color: white;
-}
-
-#articles .section-content .article-img img {
-  opacity: 1;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-#articles .section-content .article-img img:hover {
-  opacity: 0.75;
-}
-#articles .section-content .article-content {
-  text-align: left;
-  margin-top: 30px;
-  padding-right: 30px;
-}
-#articles .section-content .article-content .date {
-  color: #fdc735;
-  font-weight: bold;
-  float: left;
-}
-#articles .section-content .article-content .date span {
-  font-weight: normal;
-}
-#articles .section-content .article-content .content {
-  float: left;
-}
-#articles .section-content .article-content .content h3 a {
-  color: #333333;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-#articles .section-content .article-content .content h3 a:hover, #articles .section-content .article-content .content h3 a:focus {
-  color: #fdc735;
-}
-
-#courses-type {
-  background-color: #dddddd;
-}
-#courses-type .section-content {
-  padding: 30px 0px;
 }

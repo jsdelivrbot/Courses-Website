@@ -13,6 +13,9 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: 'Droid Sans', sans-serif;
 }
 
+a {
+  transition: all 0.6s ease-in-out;
+}
 a:hover {
   text-decoration: none;
 }
@@ -202,4 +205,52 @@ section {
 }
 .navbar-default #bottom-nav .navbar-collapse .navbar-nav li .dropdown-menu a:hover, .navbar-default #bottom-nav .navbar-collapse .navbar-nav li .dropdown-menu a:active, .navbar-default #bottom-nav .navbar-collapse .navbar-nav li .dropdown-menu a:focus {
   background-color: transparent;
+}
+
+#footer {
+  background-color: #333333;
+  border-bottom: 1px solid #dddddd;
+}
+#footer #top-footer {
+  padding: 50px 0px;
+}
+#footer #top-footer #about-us h4 {
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+#footer #top-footer #about-us p {
+  color: #a4a4a4;
+  padding-right: 70px;
+}
+#footer #top-footer #about-us button {
+  margin-top: 20px;
+}
+#footer #top-footer #quick-links h4 {
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+#footer #top-footer #quick-links p {
+  color: #fdc735;
+  font-weight: bold;
+  padding: 10px 0px;
+}
+#footer #top-footer #quick-links p a {
+  color: #a4a4a4;
+}
+#footer #top-footer #quick-links p a:hover, #footer #top-footer #quick-links p a:focus {
+  color: #fdc735;
+}
+#footer #top-footer #contact-us h4 {
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+#footer #top-footer #contact-us p {
+  padding: 10px 0px;
+  color: #a4a4a4;
+}
+#footer #top-footer #contact-us p i {
+  margin-right: 10px;
 }

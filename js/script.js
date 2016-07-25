@@ -1,6 +1,5 @@
 $(document).ready(function() {
 
-
 	// slick carousel
   var gadgetCarousel = $(".single-item, .multiple-items, .responsive");
 
