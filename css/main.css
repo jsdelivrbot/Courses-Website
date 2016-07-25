@@ -28,6 +28,14 @@ img:hover, img:focus {
   opacity: 0.75;
 }
 
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
 section {
   padding: 50px 0px;
 }
@@ -116,6 +124,9 @@ section {
 }
 .navbar-default #top-nav .collapse .navbar-nav li a:hover, .navbar-default #top-nav .collapse .navbar-nav li a:focus {
   color: white;
+}
+.navbar-default #top-nav #sign-in .modal, .navbar-default #top-nav #sign-up .modal {
+  z-index: 99999;
 }
 .navbar-default #top-nav #sign-in .modal .modal-header, .navbar-default #top-nav #sign-up .modal .modal-header {
   background-color: #fdc735;

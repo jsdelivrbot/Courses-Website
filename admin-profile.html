@@ -13,7 +13,7 @@
 			<link rel="stylesheet" type="text/css" href="slick/slick.css"/><!-- Slick.css Carousel -->
 			<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"><!-- Slick.css Carousel -->
 			<link rel="stylesheet" href="css/main.css"> <!-- my framework CSS File -->
-			<link rel="stylesheet" href="css/style.css"> <!-- CSS File -->
+			<link rel="stylesheet" href="css/admin-profile.css"> <!-- CSS File -->
 			<link rel="stylesheet" href="css/media.css"> <!-- Media Query File -->
 			<link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
 	        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -172,7 +172,92 @@
 
 			</nav> <!-- End Navbar -->
 
+			<section id="admin-profile-content">
+				<div class="container">
+					<div class="row">
+						<div class="admin-information col-xs-12 col-md-4">
 
+							<div id="admin-face">
+								<img src="img/admin-img.jpg" alt="admin image">
+								<h2>john Adam</h2>
+							</div>
+							<div id="admin-info">
+								<div class="lable"><p><b>user name:</b> JohnAdam</p></div>
+								<div><p><b>First name:</b> John</p></div>
+								<div class="lable"><p><b>Last name:</b> Adam</p></div>
+								<div><p><b>E-mail:</b> name@example.com</p></div>
+								<div class="lable"><p><b>User Rating:</b> 4.5 </p></div>
+							</div>
+
+						</div>
+						<div class="admin-pannel col-xs-12 col-md-7 row">
+							<div class="col-xs-12" id="edit-account">
+								<form class="row">
+									<h3>Account Setting:</h3>
+									<div class="col-xs-12 float-left">Email<input type="text" placeholder="name@example.com" name="email" class="col-md-9 float-right"></div>
+									<div class="col-xs-12 float-left">Username<input type="text" placeholder="username" name="username" class="col-md-9 float-right"></div>
+									<div class="col-xs-12 float-left">Password<input type="password" placeholder="password" name="password" class="col-xs-9 float-right"></div>
+									<div class="col-xs-12 float-left">Confirm Password<input type="password" placeholder="Confirm password" name="confirm password" class="col-xs-9 float-right"></div>
+									<div class="col-xs-12 float-left">Profile Picture<input type="file" name="add-img" class="col-md-9 float-right input-file"></div>
+								</form>
+							</div>
+
+							<div class="col-xs-12" id="edit-profile">
+								<form class="row">
+									<h3>Profile Setting:</h3>
+									<div class="col-xs-12 float-left">First Name<input type="text" placeholder="first name" name="first-name" class="col-md-9 float-right"></div>
+									<div class="col-xs-12 float-left">Last Name<input type="text" placeholder="last name" name="last-name" class="col-md-9 float-right"></div>
+									<div class="col-xs-12 float-left">Birthday<input type="text" placeholder="birthdate" name="birthdate" class="col-md-9 float-right"></div>
+									<div class="col-xs-12 float-left">Marital Status
+										<select class="col-xs-9 float-right">
+							                <option>Single</option>
+							                <option>Maried</option>
+							            </select>
+									</div>
+									<div class="col-xs-12 float-left">Position
+										<select class="col-xs-9 float-right">
+							                <option>CEO</option>
+							                <option>Manager</option>
+											<option>Directory</option>
+							                <option>Developer</option>
+							            </select>
+									</div>
+									<div class="col-xs-12 float-left">About<textarea name="about" placeholder="about" rows="5" class="col-xs-9 float-right"></textarea></div>
+									<button class="btn hvr-sweep-to-right col-xs-3">Update</button>
+								</form>
+							</div>
+
+							<div class="col-xs-12" id="add-article">
+								<form class="row">
+									<h3>Articles</h3>
+									<div class="col-xs-12 float-left">Article Title<input type="text" placeholder="article title" name="article-title" class="col-md-9 float-right"></div>
+									<div class="col-xs-12 float-left">Add Article Image<input type="file" name="add-img" class="col-md-9 float-right input-file"></div>
+									<div class="col-xs-12 float-left">category
+										<select class="col-xs-9 float-right">
+							                <option>Web Design</option>
+							                <option>Web Development</option>
+							                <option>Mobile Application</option>
+							                <option>Other</option>
+							            </select>
+									</div>
+									<div class="col-xs-12 float-left">Add Article<textarea name="article-content" placeholder="Article Contant" rows="5" class="col-xs-9 float-right"></textarea></div>
+									<button class="btn hvr-sweep-to-right col-xs-3">Add</button>
+								</form>
+							</div>
+							<div class="col-xs-12" id="edit-article">
+								<form class="row">
+									<h3>Edit/Delete Articles</h3>
+									<div class="col-xs-12 float-left">Search<input type="text" placeholder="search for..." name="article-search" class="col-md-9 float-right"></div>
+									<button class="btn hvr-sweep-to-right col-xs-3 float-right">search</button>
+									<div class="col-xs-12 float-left">Search Result<textarea name="article-content" placeholder="Search Result..." rows="5" class="col-xs-9 float-right"></textarea></div>
+									<button class="btn hvr-sweep-to-right col-xs-3">edit</button>
+									<button class="btn hvr-sweep-to-right col-xs-3">delet</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
 			<footer id="footer">
 				<div class="container">

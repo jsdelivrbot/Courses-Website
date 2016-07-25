@@ -36,6 +36,12 @@ img{
 	}
 }
 
+.float-left{
+	float: left;
+}
+.float-right{
+	float: right;
+}
 
 section {
 	padding: 50px 0px;
@@ -129,6 +135,7 @@ section {
 		}
 		#sign-in, #sign-up{
 			.modal{
+				z-index: 99999;
 				.modal-header{
 					background-color: $mainColor;
 					.modal-title{
