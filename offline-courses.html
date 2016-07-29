@@ -8,12 +8,8 @@
 					 <title>Courses | Offline</title>
 
             <link rel="stylesheet" href="css/bootstrap.css"> <!-- Latest compiled and minified CSS -->
-			<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-			<link rel="stylesheet" href="css/animate.css"> <!-- Animate.CSS File -->
-			<link rel="stylesheet" type="text/css" href="slick/slick.css"/><!-- Slick.css Carousel -->
-			<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"><!-- Slick.css Carousel -->
 			<link rel="stylesheet" href="css/main.css"> <!-- my framework CSS File -->
-			<link rel="stylesheet" href="css/style.css"> <!-- CSS File -->
+			<link rel="stylesheet" href="css/offline-courses.css"> <!-- CSS File -->
 			<link rel="stylesheet" href="css/media.css"> <!-- Media Query File -->
 			<link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
 	        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -23,7 +19,7 @@
 	        <![endif]-->
         </head>
         <body>
-			<nav class="navbar navbar-default">
+			<nav class="navbar navbar-default" id="navbar">
 				<div id="top-nav">
 					<div class="container-fluid">
 						<div class="navbar-header">
@@ -38,8 +34,8 @@
 					    <!-- Collect the nav links, forms, and other content for toggling -->
 					    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					      <ul class="nav navbar-nav navbar-right">
-					        <li><a href="#" data-toggle="modal" data-target="#sign-in-modal">Sign In</a></li>
-					        <li><a href="#" data-toggle="modal" data-target="#sign-up-modal">Sign Up</a></li>
+					        <li><a href="#" data-toggle="modal" data-target="#sign-in-modal" class="sign-modal">Sign In</a></li>
+					        <li><a href="#" data-toggle="modal" data-target="#sign-up-modal" class="sign-modal">Sign Up</a></li>
 					      </ul>
 					    </div><!-- /.navbar-collapse -->
 						<div id="sign-in">
@@ -141,7 +137,7 @@
 					        <span class="icon-bar"></span>
 					        <span class="icon-bar"></span>
 					      </button>
-					      <a class="navbar-brand" href="#">BrandName</a>
+					      <a class="navbar-brand" href="index.html">BrandName</a>
 					    </div>
 
 					    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -172,6 +168,183 @@
 
 			</nav> <!-- End Navbar -->
 
+			<section id="course">
+			    <div class="container ">
+			        <div class="course-category row">
+			            <div class="cat-drop col-xs-3">
+			            	<ul class="list-group">
+							  <li class="list-group-item"> <a href="#web-design" data-scroll>Web Design</li></a>
+							  <li class="list-group-item"><a href="#web-develop" data-scroll>Web develop</a> </li>
+							  <li class="list-group-item"><a href="#Android" data-scroll>Mobile App</a> </li>
+							</ul>
+			            </div>
+			        </div>
+
+			        <div class="course-container col-xs-8" id="web-design">
+			            <div class="course-header col-xs-12">
+				            <div class="row">
+					            <h1>Web design</h1>
+					            <img src="img/creative-website-design.jpg" alt="">
+				             </div>
+			            </div>
+
+			        	<div class="course-description col-xs-12">
+				            <div class="row">
+				                <div class="description-title col-xs-12">
+					                <h2>Course Description</h2>
+					                <div class="discription-content col-xs-12">
+						                <p>
+											Maecenas cursus mauris libero, a imperdiet enim pellentesque id.
+											Aliquam erat volutpat. Suspendisse sit amet sapien at risus
+											efficitur sagittis. Pellentesque non ullamcorper justo. Vivamus
+											commodo, sem et vestibulum eleifend, erat odio tristique enim,
+											nec tempus tortor ligula in neque. Vestibulum eu commodo ante.
+											Nunc volutpat nec diam a congue. Vivamus volutpat eros pulvinar
+											velit laoreet, sit amet egestas erat dignissim. Sed quis rutrum
+											tellus, sit amet viverra felis. Cras sagittis sem sit amet urna
+											feugiat rutrum. Nam nulla ipsum, venenatis malesuada felis quis,
+											ultricies convallis neque. Pellentesque tristique fringilla tempus.
+											Vivamus bibendum nibh in dolor pharetra, a euismod nulla dignissim.
+											Aenean viverra tincidunt nibh, in imperdiet nunc. Suspendisse eu ante
+											pretium, consectetur leo at, congue quam. Nullam hendrerit porta ante
+											vitae tristique
+										</p>
+					                </div>
+				            	</div>
+				            </div>
+
+				        </div>
+			        </div>
+
+					<div class="course-info col-xs-8">
+
+						<div class="info row">
+							<form method="post" class="col-xs-12">
+
+								<button class="btn hvr-sweep-to-right">Enrol this Course</button>
+								<hr>
+								 <label>Category : Web Design</label>
+								<hr>
+							   <label>Instractor: Peter Adam</label>
+								<hr>
+							   <label>Duration : 40 hours </label>
+								<hr>
+								<label>Price : 40$ </label>
+
+
+							</form>
+						</div>
+					</div>
+
+			        <div class="course-container col-xs-8" id="web-develop">
+			                 <div class="course-header col-xs-12">
+			            <div class="row">
+			             <h1>web develop</h1>
+			            <img src="img/Web-Develop-article-img-1.jpg" alt="">
+			             </div>
+			            </div>
+
+
+
+			            <div class="course-description col-xs-12">
+				            <div class="row">
+				                <div class="description-title col-xs-12">
+				                	<h2>Course Description</h2>
+				                	<div class="discription-content col-xs-12">
+										<p>
+											Maecenas cursus mauris libero, a imperdiet enim pellentesque id.
+											Aliquam erat volutpat. Suspendisse sit amet sapien at risus
+											efficitur sagittis. Pellentesque non ullamcorper justo. Vivamus
+											commodo, sem et vestibulum eleifend, erat odio tristique enim,
+											nec tempus tortor ligula in neque. Vestibulum eu commodo ante.
+											Nunc volutpat nec diam a congue. Vivamus volutpat eros pulvinar
+											velit laoreet, sit amet egestas erat dignissim. Sed quis rutrum
+											tellus, sit amet viverra felis. Cras sagittis sem sit amet urna
+											feugiat rutrum. Nam nulla ipsum, venenatis malesuada felis quis,
+											ultricies convallis neque. Pellentesque tristique fringilla tempus.
+											Vivamus bibendum nibh in dolor pharetra, a euismod nulla dignissim.
+											Aenean viverra tincidunt nibh, in imperdiet nunc. Suspendisse eu ante
+											pretium, consectetur leo at, congue quam. Nullam hendrerit porta ante
+											vitae tristique
+										</p>
+					                </div>
+				            	</div>
+				            </div>
+			            </div>
+
+			        </div>
+		            <div class="course-info col-xs-8">
+		                <div class="info row">
+		                    <form method="post" class="col-xs-12">
+
+                                <button class="btn hvr-sweep-to-right">Enrol this Course</button>
+                                <hr>
+                                 <label>Category : Web develop</label>
+                                <hr>
+                               <label>Instractor: adam joe</label>
+                                <hr>
+                               <label>Duration : 55 hours </label>
+                                <hr>
+								<label>Price : 40$ </label>
+
+		                    </form>
+		                </div>
+		            </div>
+					<div class="course-container col-xs-8" id="Android">
+			            <div class="course-header col-xs-12">
+				            <div class="row">
+					            <h1>Android</h1>
+					            <img src="img/Web-Develop-article-img-1.jpg" alt="">
+				             </div>
+			            </div>
+
+			            <div class="course-description col-xs-12">
+				            <div class="row">
+					            <div class="description-title col-xs-12">
+					                <h2>Course Description</h2>
+					                <div class="discription-content col-xs-12">
+										<p>
+											Maecenas cursus mauris libero, a imperdiet enim pellentesque id.
+											Aliquam erat volutpat. Suspendisse sit amet sapien at risus
+											efficitur sagittis. Pellentesque non ullamcorper justo. Vivamus
+											commodo, sem et vestibulum eleifend, erat odio tristique enim,
+											nec tempus tortor ligula in neque. Vestibulum eu commodo ante.
+											Nunc volutpat nec diam a congue. Vivamus volutpat eros pulvinar
+											velit laoreet, sit amet egestas erat dignissim. Sed quis rutrum
+											tellus, sit amet viverra felis. Cras sagittis sem sit amet urna
+											feugiat rutrum. Nam nulla ipsum, venenatis malesuada felis quis,
+											ultricies convallis neque. Pellentesque tristique fringilla tempus.
+											Vivamus bibendum nibh in dolor pharetra, a euismod nulla dignissim.
+											Aenean viverra tincidunt nibh, in imperdiet nunc. Suspendisse eu ante
+											pretium, consectetur leo at, congue quam. Nullam hendrerit porta ante
+											vitae tristique
+										</p>
+					                </div>
+					            </div>
+				            </div>
+			            </div>
+			        </div>
+		            <div class="course-info col-xs-8">
+
+		                <div class="info row">
+                            <form method="post" class="col-xs-12">
+
+                                    <button class="btn hvr-sweep-to-right">Enrol this Course</button>
+                                    <hr>
+                                     <label>Category : Android</label>
+                                    <hr>
+                                   <label>Instractor: Joseph </label>
+                                    <hr>
+                                   <label>Duration : 50 hours </label>
+                                    <hr>
+									<label>Price : 40$ </label>
+
+                            </form>
+		                </div>
+		            </div>
+
+			    </div>
+			</section>
 
 
 			<footer id="footer">
@@ -217,13 +390,19 @@
 				</div>
 			</footer>
 
+			<!-- Loading Section -->
+			<div class="loading-overlay">
+			    <div class="container-fluid">
+				  <img src="img/loading.gif" alt="gif loading"/>
+			    </div>
+			</div> <!-- End Loading Section -->
+
 			  <script src="js/jquery.min.js"></script> <!-- Jquery Mini file -->
 			  <script src="js/bootstrap.min.js"></script> <!-- Latest compiled and minified JavaScript -->
-			  <script src="js/wow.min.js"></script> <!-- WOW.js Mini file -->
-  			  <script>new WOW().init();</script> <!-- Activate WOW.js File -->
-			  <script type="text/javascript" src="slick/slick.min.js"></script><!-- Slick.js Carousel file -->
-			  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-              <script src="js/jquery.counterup.min.js"></script>
+			  <script src="js/smooth-scroll.min.js"></script>
+			 <script>
+			   smoothScroll.init();
+			 </script>
 			  <script src="js/script.js"></script> <!-- Externa Js File file - My File -->
         </body>
     </html>

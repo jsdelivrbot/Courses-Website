@@ -10,8 +10,6 @@
             <link rel="stylesheet" href="css/bootstrap.css"> <!-- Latest compiled and minified CSS -->
 			<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 			<link rel="stylesheet" href="css/animate.css"> <!-- Animate.CSS File -->
-			<link rel="stylesheet" type="text/css" href="slick/slick.css"/><!-- Slick.css Carousel -->
-			<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"><!-- Slick.css Carousel -->
 			<link rel="stylesheet" href="css/main.css"> <!-- my framework CSS File -->
 			<link rel="stylesheet" href="css/blog.css"> <!-- CSS File -->
 			<link rel="stylesheet" href="css/media.css"> <!-- Media Query File -->
@@ -23,7 +21,7 @@
 	        <![endif]-->
         </head>
         <body>
-			<nav class="navbar navbar-default">
+			<nav class="navbar navbar-default" id="navbar">
 				<div id="top-nav">
 					<div class="container-fluid">
 						<div class="navbar-header">
@@ -38,8 +36,8 @@
 					    <!-- Collect the nav links, forms, and other content for toggling -->
 					    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					      <ul class="nav navbar-nav navbar-right">
-					        <li><a href="#" data-toggle="modal" data-target="#sign-in-modal">Sign In</a></li>
-					        <li><a href="#" data-toggle="modal" data-target="#sign-up-modal">Sign Up</a></li>
+					        <li><a href="#" data-toggle="modal" data-target="#sign-in-modal" class="sign-modal">Sign In</a></li>
+					        <li><a href="#" data-toggle="modal" data-target="#sign-up-modal" class="sign-modal">Sign Up</a></li>
 					      </ul>
 					    </div><!-- /.navbar-collapse -->
 						<div id="sign-in">
@@ -147,6 +145,7 @@
 					    <!-- Collect the nav links, forms, and other content for toggling -->
 					    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
 					      <ul class="nav navbar-nav navbar-right">
+							<li><a href="index.html">Home</a></li>
 					        <li><a href="#web-design" data-scroll>Web Design</a></li>
 							<li><a href="#web-develop" data-scroll>Web Development</a></li>
 							<li><a href="#mobile-app" data-scroll>Mobile App</a></li>
@@ -281,6 +280,13 @@
 					</div>
 				</div>
 			</footer>
+
+			<!-- Loading Section -->
+			<div class="loading-overlay">
+			    <div class="container-fluid">
+				  <img src="img/loading.gif" alt="gif loading"/>
+			    </div>
+			</div> <!-- End Loading Section -->
 
 			  <script src="js/jquery.min.js"></script> <!-- Jquery Mini file -->
 			  <script src="js/bootstrap.min.js"></script> <!-- Latest compiled and minified JavaScript -->

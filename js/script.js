@@ -1,4 +1,30 @@
+/*Loading section*/
+$(window).load(function() {
+  $('body').css("overflow","auto");
+  $(".loading-overlay .container-fluid img").fadeOut(1000,function () {
+	  $(this).parent().fadeOut(2000);
+  	});
+  });
+
+
+		  /* navbar scroll effect */
+		  function Scroll(){
+				  var bottom = document.getElementById('bottom-nav');
+				  var top = document.getElementsByClassName('sign-modal');
+				  var ypos = window.pageYOffset;
+				  if(ypos > 300) {
+					  bottom.style.padding = "0px";
+					  top.style.padding = "5px 10px 5px 10px";
+				  }
+				  else{
+					  bottom.style.padding = "15px";
+					  top.style.padding = "10px";
+					  }
+			  }
+			  window.addEventListener("scroll",Scroll);
+
 $(document).ready(function() {
+
 
 	// slick carousel
   var gadgetCarousel = $(".single-item, .multiple-items, .responsive");
@@ -68,5 +94,20 @@ $(document).ready(function() {
     delay: 10,
     time: 2000
   });
+
+  // add article
+  var max_fields      = 10;
+  var wrapper         = $(".input");
+  var add             = $(".add_field");
+  var x				  = 1;
+
+  $(add).click(function(e){
+	  e.preventDefault();
+	  if(x < max_fields){
+		  x++;
+		  $(wrapper).append("<div class='input col-xs-12 float-left'>Course Url<input type='url' placeholder='URL' name='myname[] class='col-xs-9 float-right'/></div><br />");
+	  }
+  });
+
 
  });

@@ -10,7 +10,7 @@
 	padding: 50px 0px;
 	text-align: center;
 	position: relative;
-	top: -20px;
+	top: 135px;
 	h1{
 		color: $mainColor;
 		font-weight: bold;
@@ -23,6 +23,8 @@
 }
 
 #contact-us-content{
+	position: relative;
+	top: 135px;
 	.contact-us-map, .contact-us-forms{
 		padding: 50px 0px;
 	}

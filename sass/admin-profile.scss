@@ -2,6 +2,8 @@
 
 // admin profile
 #admin-profile-content{
+	position: relative;
+	top: 130px;
 	.admin-information, .admin-pannel{
 		background-color: $whiteColor;
 		padding: 20px;
@@ -135,6 +137,7 @@
 			}
 		}
 		#edit-article{
+			border-bottom: 1px solid $border-color;
 			padding-bottom: 30px;
 			form{
 				h3{
@@ -155,6 +158,75 @@
 				button{
 					color: $mainColor;
 					margin: 10px 15px 10px 10px;
+					&:hover, &:focus{
+						color: $whiteColor;
+					}
+				}
+			}
+		}
+		#online-course-edit{
+			border-bottom: 1px solid $border-color;
+			padding-bottom: 30px;
+
+			form{
+				h3{
+					color: $primaryColor;
+					font-weight: bold;
+					text-transform: uppercase;
+					margin-bottom: 30px;
+				}
+				div{
+					color: $primaryColor;
+					#abc{
+						color: $mainColor;
+						margin: 6px 0px 0px 15px;
+						&:hover, &:focus{
+							color: $whiteColor;
+						}
+					}
+					input, select, textarea{
+						border: 1px solid $border-color;
+						padding: 10px 10px;
+						border-radius: 2px;
+						margin: 5px 0px;
+					}
+				}
+				button{
+					color: $mainColor;
+					margin: 30px 20px 0px 0px;
+					&:hover, &:focus{
+						color: $whiteColor;
+					}
+				}
+			}
+		}
+		#offline-course-edit{
+			form{
+				h3{
+					color: $primaryColor;
+					font-weight: bold;
+					text-transform: uppercase;
+					margin-bottom: 30px;
+				}
+				div{
+					color: $primaryColor;
+					#abc{
+						color: $mainColor;
+						margin: 6px 0px 0px 15px;
+						&:hover, &:focus{
+							color: $whiteColor;
+						}
+					}
+					input, select, textarea{
+						border: 1px solid $border-color;
+						padding: 10px 10px;
+						border-radius: 2px;
+						margin: 5px 0px;
+					}
+				}
+				button{
+					color: $mainColor;
+					margin: 30px 20px 0px 0px;
 					&:hover, &:focus{
 						color: $whiteColor;
 					}

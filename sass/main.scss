@@ -112,10 +112,14 @@ section {
 }
 
 // bootstrap re-design
-.navbar-default {
+#navbar {
 	background-color: transparent;
 	border-radius: 0px;
 	border: 0px;
+	position: fixed;
+	width: 100%;
+	z-index: 99;
+	transition:all 0.75s ease-in-out;
 	#top-nav{
 		background-color: $primaryColor;
 		padding: 0px;
@@ -197,6 +201,7 @@ section {
 		position: relative;
 		z-index: 999;
 		padding: 15px 0px;
+		transition: all 0.5s ease-in-out;
 		.container{
 			border-top: 1px solid $border-color;
 		}
@@ -261,6 +266,8 @@ section {
 #footer{
 	background-color: $primaryColor;
 	border-bottom: 1px solid $border-color;
+	position: relative;
+	top: 130px;
 	#top-footer{
 		padding: 50px 0px;
 		#about-us{
@@ -312,3 +319,20 @@ section {
 	}
 
 }
+
+/* Loading Section */
+.loading-overlay .container-fluid {
+	background-color: #ebeaea;
+	color:#fff ;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+}
+			.loading-overlay img {
+				text-align: center;
+				margin-top:250px;
+				margin-left: 45%;
+			}

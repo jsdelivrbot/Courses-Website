@@ -108,86 +108,91 @@ section {
   transform: scaleX(1);
 }
 
-.navbar-default {
+#navbar {
   background-color: transparent;
   border-radius: 0px;
   border: 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  transition: all 0.75s ease-in-out;
 }
-.navbar-default #top-nav {
+#navbar #top-nav {
   background-color: #333333;
   padding: 0px;
 }
-.navbar-default #top-nav .collapse .navbar-nav li a {
+#navbar #top-nav .collapse .navbar-nav li a {
   font-size: 14px;
   color: #a4a4a4;
   padding: 10px;
 }
-.navbar-default #top-nav .collapse .navbar-nav li a:hover, .navbar-default #top-nav .collapse .navbar-nav li a:focus {
+#navbar #top-nav .collapse .navbar-nav li a:hover, #navbar #top-nav .collapse .navbar-nav li a:focus {
   color: white;
 }
-.navbar-default #top-nav #sign-in .modal, .navbar-default #top-nav #sign-up .modal {
+#navbar #top-nav #sign-in .modal, #navbar #top-nav #sign-up .modal {
   z-index: 99999;
 }
-.navbar-default #top-nav #sign-in .modal .modal-header, .navbar-default #top-nav #sign-up .modal .modal-header {
+#navbar #top-nav #sign-in .modal .modal-header, #navbar #top-nav #sign-up .modal .modal-header {
   background-color: #fdc735;
 }
-.navbar-default #top-nav #sign-in .modal .modal-header .modal-title, .navbar-default #top-nav #sign-up .modal .modal-header .modal-title {
+#navbar #top-nav #sign-in .modal .modal-header .modal-title, #navbar #top-nav #sign-up .modal .modal-header .modal-title {
   color: #333333;
   font-size: 24px;
 }
-.navbar-default #top-nav #sign-in .modal .modal-body .btn-group .btn-primary, .navbar-default #top-nav #sign-up .modal .modal-body .btn-group .btn-primary {
+#navbar #top-nav #sign-in .modal .modal-body .btn-group .btn-primary, #navbar #top-nav #sign-up .modal .modal-body .btn-group .btn-primary {
   border: 1px solid #e3b32f;
   background-color: #fdc735;
 }
-.navbar-default #top-nav #sign-in .modal .modal-body .btn-group .btn-primary:hover, .navbar-default #top-nav #sign-in .modal .modal-body .btn-group .btn-primary:focus, .navbar-default #top-nav #sign-up .modal .modal-body .btn-group .btn-primary:hover, .navbar-default #top-nav #sign-up .modal .modal-body .btn-group .btn-primary:focus {
+#navbar #top-nav #sign-in .modal .modal-body .btn-group .btn-primary:hover, #navbar #top-nav #sign-in .modal .modal-body .btn-group .btn-primary:focus, #navbar #top-nav #sign-up .modal .modal-body .btn-group .btn-primary:hover, #navbar #top-nav #sign-up .modal .modal-body .btn-group .btn-primary:focus {
   background-color: #fdd25d;
 }
-.navbar-default #top-nav #sign-in .modal .modal-body .input-group, .navbar-default #top-nav #sign-up .modal .modal-body .input-group {
+#navbar #top-nav #sign-in .modal .modal-body .input-group, #navbar #top-nav #sign-up .modal .modal-body .input-group {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.navbar-default #top-nav #sign-in .modal .modal-body .input-group p, .navbar-default #top-nav #sign-up .modal .modal-body .input-group p {
+#navbar #top-nav #sign-in .modal .modal-body .input-group p, #navbar #top-nav #sign-up .modal .modal-body .input-group p {
   color: #333333;
 }
-.navbar-default #top-nav #sign-in .modal .modal-body .input-group p input, .navbar-default #top-nav #sign-up .modal .modal-body .input-group p input {
+#navbar #top-nav #sign-in .modal .modal-body .input-group p input, #navbar #top-nav #sign-up .modal .modal-body .input-group p input {
   border: 1px solid #dddddd;
   border-radius: 5px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.navbar-default #top-nav #sign-in .modal .modal-footer .btn-primary, .navbar-default #top-nav #sign-up .modal .modal-footer .btn-primary {
+#navbar #top-nav #sign-in .modal .modal-footer .btn-primary, #navbar #top-nav #sign-up .modal .modal-footer .btn-primary {
   border: 1px solid #e3b32f;
   background-color: #fdc735;
 }
-.navbar-default #top-nav #sign-in .modal .modal-footer .btn-primary:hover, .navbar-default #top-nav #sign-in .modal .modal-footer .btn-primary:focus, .navbar-default #top-nav #sign-up .modal .modal-footer .btn-primary:hover, .navbar-default #top-nav #sign-up .modal .modal-footer .btn-primary:focus {
+#navbar #top-nav #sign-in .modal .modal-footer .btn-primary:hover, #navbar #top-nav #sign-in .modal .modal-footer .btn-primary:focus, #navbar #top-nav #sign-up .modal .modal-footer .btn-primary:hover, #navbar #top-nav #sign-up .modal .modal-footer .btn-primary:focus {
   background-color: #fdd25d;
 }
-.navbar-default #top-nav #sign-up .modal-body .input-group:nth-child(7) p input {
+#navbar #top-nav #sign-up .modal-body .input-group:nth-child(7) p input {
   border: 0px;
 }
-.navbar-default #bottom-nav {
+#navbar #bottom-nav {
   background-color: #333333;
   position: relative;
   z-index: 999;
   padding: 15px 0px;
+  transition: all 0.5s ease-in-out;
 }
-.navbar-default #bottom-nav .container {
+#navbar #bottom-nav .container {
   border-top: 1px solid #dddddd;
 }
-.navbar-default #bottom-nav .navbar-header {
+#navbar #bottom-nav .navbar-header {
   padding-top: 15px;
 }
-.navbar-default #bottom-nav .navbar-header a {
+#navbar #bottom-nav .navbar-header a {
   font-size: 28px;
   color: white;
 }
-.navbar-default #bottom-nav .navbar-collapse .navbar-right {
+#navbar #bottom-nav .navbar-collapse .navbar-right {
   padding-top: 15px;
 }
-.navbar-default #bottom-nav .navbar-collapse .navbar-right li {
+#navbar #bottom-nav .navbar-collapse .navbar-right li {
   margin: 0px 15px;
 }
-.navbar-default #bottom-nav .navbar-collapse .navbar-right li a {
+#navbar #bottom-nav .navbar-collapse .navbar-right li a {
   font-size: 16px;
   font-weight: bold;
   color: white;
@@ -195,32 +200,34 @@ section {
   padding: 10px 5px;
   transition: all 0.5s ease-in-out;
 }
-.navbar-default #bottom-nav .navbar-collapse .navbar-right li a:hover, .navbar-default #bottom-nav .navbar-collapse .navbar-right li a:focus {
+#navbar #bottom-nav .navbar-collapse .navbar-right li a:hover, #navbar #bottom-nav .navbar-collapse .navbar-right li a:focus {
   border-bottom: 3px solid #fdc735;
 }
-.navbar-default #bottom-nav .navbar-collapse .navbar-right button {
+#navbar #bottom-nav .navbar-collapse .navbar-right button {
   margin-top: 4px;
 }
-.navbar-default #bottom-nav .navbar-collapse .navbar-right button i {
+#navbar #bottom-nav .navbar-collapse .navbar-right button i {
   color: #fdc735;
 }
-.navbar-default #bottom-nav .navbar-collapse .navbar-right button:hover i {
+#navbar #bottom-nav .navbar-collapse .navbar-right button:hover i {
   color: white;
 }
-.navbar-default #bottom-nav .navbar-collapse .navbar-nav li .dropdown-menu {
+#navbar #bottom-nav .navbar-collapse .navbar-nav li .dropdown-menu {
   background-color: #333333;
   color: white;
 }
-.navbar-default #bottom-nav .navbar-collapse .navbar-nav li .dropdown-menu a {
+#navbar #bottom-nav .navbar-collapse .navbar-nav li .dropdown-menu a {
   color: white;
 }
-.navbar-default #bottom-nav .navbar-collapse .navbar-nav li .dropdown-menu a:hover, .navbar-default #bottom-nav .navbar-collapse .navbar-nav li .dropdown-menu a:active, .navbar-default #bottom-nav .navbar-collapse .navbar-nav li .dropdown-menu a:focus {
+#navbar #bottom-nav .navbar-collapse .navbar-nav li .dropdown-menu a:hover, #navbar #bottom-nav .navbar-collapse .navbar-nav li .dropdown-menu a:active, #navbar #bottom-nav .navbar-collapse .navbar-nav li .dropdown-menu a:focus {
   background-color: transparent;
 }
 
 #footer {
   background-color: #333333;
   border-bottom: 1px solid #dddddd;
+  position: relative;
+  top: 130px;
 }
 #footer #top-footer {
   padding: 50px 0px;
@@ -264,4 +271,22 @@ section {
 }
 #footer #top-footer #contact-us p i {
   margin-right: 10px;
+}
+
+/* Loading Section */
+.loading-overlay .container-fluid {
+  background-color: #ebeaea;
+  color: white;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+.loading-overlay img {
+  text-align: center;
+  margin-top: 250px;
+  margin-left: 45%;
 }

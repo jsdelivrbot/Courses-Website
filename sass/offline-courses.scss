@@ -1,0 +1,126 @@
+@import "main";
+
+// courses section
+#course {
+	position: relative;
+	top: 130px;
+
+	.course-category{
+		position: fixed;
+		top: 230px;
+		width: 100%;
+		.cat-drop{
+			.list-group{
+				.list-group-item{
+					a{
+						color: $primaryColor;
+						font-weight: bold;
+						&:hover, &:focus, &:active{
+							color: $mainColor-hover;
+							text-decoration: none;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#web-design{
+		float: right;
+		margin: 50px 0px;
+		background-color: $whiteColor;
+		box-shadow: 5px 5px 8px $border-color;
+		border-radius: 10px;
+		border: 1px solid $border-color;
+		h1 {
+			text-align: center;
+			font-size: 62px;
+			font-weight: bold;
+		}
+
+		img{
+			width: 100%;
+			height: 100%;
+		}
+		.course-description{
+			h2{
+				font-size: 38px;
+				font-weight: bold;
+			}
+			p{
+				font-size: 16px;
+				color: $fontPrimaryColor;
+			}
+		}
+	}
+
+	#web-develop{
+		float: right;
+		margin: 50px 0px;
+		background-color: $whiteColor;
+		box-shadow: 5px 5px 8px $border-color;
+		border-radius: 10px;
+		border: 1px solid $border-color;
+		h1 {
+			text-align: center;
+			font-size: 62px;
+			font-weight: bold;
+		}
+
+		img{
+			width: 100%;
+			height: 100%;
+		}
+		.course-description{
+			h2{
+				font-size: 38px;
+				font-weight: bold;
+			}
+			p{
+				font-size: 16px;
+				color: $fontPrimaryColor;
+			}
+		}
+	}
+	#Android{
+		float: right;
+		margin: 50px 0px;
+		background-color: $whiteColor;
+		box-shadow: 5px 5px 8px $border-color;
+		border-radius: 10px;
+		border: 1px solid $border-color;
+		h1 {
+			text-align: center;
+			font-size: 62px;
+			font-weight: bold;
+		}
+
+		img{
+			width: 100%;
+			height: 100%;
+		}
+		.course-description{
+			h2{
+				font-size: 38px;
+				font-weight: bold;
+			}
+			p{
+				font-size: 16px;
+				color: $fontPrimaryColor;
+			}
+		}
+	}
+	.course-info{
+		float: right;
+		.info{
+			form{
+				button{
+					color: $mainColor;
+					&:hover, &:focus{
+						color: $whiteColor;
+					}
+				}
+			}
+		}
+	}
+}

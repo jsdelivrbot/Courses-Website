@@ -9,7 +9,6 @@
 
             <link rel="stylesheet" href="css/bootstrap.css"> <!-- Latest compiled and minified CSS -->
 			<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-			<link rel="stylesheet" href="css/animate.css"> <!-- Animate.CSS File -->
 			<link rel="stylesheet" href="css/main.css"> <!-- my framework CSS File -->
 			<link rel="stylesheet" href="css/contact-us.css"> <!-- CSS File -->
 			<link rel="stylesheet" href="css/media.css"> <!-- Media Query File -->
@@ -21,7 +20,7 @@
 	        <![endif]-->
         </head>
         <body>
-			<nav class="navbar navbar-default">
+			<nav class="navbar navbar-default" id="navbar">
 				<div id="top-nav">
 					<div class="container-fluid">
 						<div class="navbar-header">
@@ -36,8 +35,8 @@
 					    <!-- Collect the nav links, forms, and other content for toggling -->
 					    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					      <ul class="nav navbar-nav navbar-right">
-					        <li><a href="#" data-toggle="modal" data-target="#sign-in-modal">Sign In</a></li>
-					        <li><a href="#" data-toggle="modal" data-target="#sign-up-modal">Sign Up</a></li>
+					        <li><a href="#" data-toggle="modal" data-target="#sign-in-modal" class="sign-modal">Sign In</a></li>
+					        <li><a href="#" data-toggle="modal" data-target="#sign-up-modal" class="sign-modal">Sign Up</a></li>
 					      </ul>
 					    </div><!-- /.navbar-collapse -->
 						<div id="sign-in">
@@ -139,7 +138,7 @@
 					        <span class="icon-bar"></span>
 					        <span class="icon-bar"></span>
 					      </button>
-					      <a class="navbar-brand" href="#">BrandName</a>
+					      <a class="navbar-brand" href="index.html">BrandName</a>
 					    </div>
 
 					    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -187,16 +186,16 @@
 							<img src="img/line.png" alt="">
 							<h2>We Wanna hear from you</h2>
 						</div>
-						<div class="contact-form col-xs-12 col-lg-8">
+						<div class="contact-form col-xs-12 col-lg-12">
 							<form class="col-lg-12">
-								<input type="text" placeholder="Name" name="username" class="col-md-5">
-								<input type="password" placeholder="Email" name="password" class="col-md-5 ">
-								<textarea name="message" placeholder="Message" rows="5" class="col-xs-11"></textarea>
+								<input type="text" placeholder="Name" name="username" class="col-xs-12">
+								<input type="password" placeholder="Email" name="password" class="col-xs-12 ">
+								<textarea name="message" placeholder="Message" rows="5" class="col-xs-12"></textarea>
 							</form>
-							<button class="btn col-xs-4">Send</button>
+							<button class="btn col-xs-3">Send</button>
 
 						</div>
-						
+
 
 					</div>
 				</div>
@@ -244,6 +243,13 @@
 					</div>
 				</div>
 			</footer>
+
+			<!-- Loading Section -->
+			<div class="loading-overlay">
+			    <div class="container-fluid">
+				  <img src="img/loading.gif" alt="gif loading"/>
+			    </div>
+			</div> <!-- End Loading Section -->
 
 			  <script src="js/jquery.min.js"></script> <!-- Jquery Mini file -->
 			  <script src="js/bootstrap.min.js"></script> <!-- Latest compiled and minified JavaScript -->

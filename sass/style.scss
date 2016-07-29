@@ -4,7 +4,7 @@
 // header Section
 #header{
 	position: relative;
-	top: -20px;
+	top: 130px;
 	overflow: hidden;
 	margin: 0px;
 	.container-fluid{
@@ -58,6 +58,8 @@
 
 // Welcome Section
 #welcome{
+	position: relative;
+	top: 130px;
 	.section-header{
 		text-align: left;
 		padding: 0px 20px 0px 0px;
@@ -86,6 +88,8 @@
 
 // Popular Courses Section
 #popular-courses{
+	position: relative;
+	top: 130px;
 	.section-content{
 		.multiple-items{
 			.course-img{
@@ -148,6 +152,8 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	position: relative;
+	top: 130px;
 	.section-header{
 		h1{
 			color: $whiteColor;
@@ -183,6 +189,8 @@
 
 // Recent Articla Section
 #articles{
+	position: relative;
+	top: 130px;
 	.section-content{
 		.article-img{
 			img{
@@ -225,6 +233,8 @@
 
 // courses-type Section
 #courses-type{
+	position: relative;
+	top: 130px;
 	background-color: $border-color;
 	.section-content{
 		padding: 30px 0px;

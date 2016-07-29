@@ -174,6 +174,7 @@ section {
   position: relative;
   z-index: 999;
   padding: 15px 0px;
+  transition: all 0.5s ease-in-out;
 }
 #navbar #bottom-nav .container {
   border-top: 1px solid #dddddd;
@@ -290,65 +291,104 @@ section {
   margin-left: 45%;
 }
 
-#contact-us-header {
-  background-image: url("../img/header-slider-1.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 50px 0px;
-  text-align: center;
+#course {
   position: relative;
-  top: 135px;
+  top: 130px;
 }
-#contact-us-header h1 {
-  color: #fdc735;
-  font-weight: bold;
-  text-transform: uppercase;
+#course .course-category {
+  position: fixed;
+  top: 230px;
+  width: 100%;
 }
-#contact-us-header h2 {
-  color: white;
-  text-transform: uppercase;
-}
-
-#contact-us-content {
-  position: relative;
-  top: 135px;
-}
-#contact-us-content .contact-us-map, #contact-us-content .contact-us-forms {
-  padding: 50px 0px;
-}
-#contact-us-content .contact-us-forms .form-header {
-  text-align: center;
-}
-#contact-us-content .contact-us-forms .form-header h1 {
-  color: #fdc735;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-#contact-us-content .contact-us-forms .form-header h2 {
+#course .course-category .cat-drop .list-group .list-group-item a {
   color: #333333;
-  text-transform: uppercase;
+  font-weight: bold;
 }
-#contact-us-content .contact-us-forms .contact-form {
-  padding: 50px 0px;
-  text-align: center;
+#course .course-category .cat-drop .list-group .list-group-item a:hover, #course .course-category .cat-drop .list-group .list-group-item a:focus, #course .course-category .cat-drop .list-group .list-group-item a:active {
+  color: #fdd25d;
+  text-decoration: none;
 }
-#contact-us-content .contact-us-forms .contact-form form input, #contact-us-content .contact-us-forms .contact-form form textarea {
+#course #web-design {
+  float: right;
+  margin: 50px 0px;
+  background-color: white;
+  box-shadow: 5px 5px 8px #dddddd;
+  border-radius: 10px;
   border: 1px solid #dddddd;
-  padding: 10px;
-  border-radius: 5px;
-  margin: 15px 0px;
-  outline-color: transparent;
 }
-#contact-us-content .contact-us-forms .contact-form form input:nth-child(1) {
-  margin-right: 60px;
+#course #web-design h1 {
+  text-align: center;
+  font-size: 62px;
+  font-weight: bold;
 }
-#contact-us-content .contact-us-forms .contact-form button {
-  margin-left: 15px;
-  background-color: #fdc735;
+#course #web-design img {
+  width: 100%;
+  height: 100%;
+}
+#course #web-design .course-description h2 {
+  font-size: 38px;
+  font-weight: bold;
+}
+#course #web-design .course-description p {
+  font-size: 16px;
+  color: #a4a4a4;
+}
+#course #web-develop {
+  float: right;
+  margin: 50px 0px;
+  background-color: white;
+  box-shadow: 5px 5px 8px #dddddd;
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+}
+#course #web-develop h1 {
+  text-align: center;
+  font-size: 62px;
+  font-weight: bold;
+}
+#course #web-develop img {
+  width: 100%;
+  height: 100%;
+}
+#course #web-develop .course-description h2 {
+  font-size: 38px;
+  font-weight: bold;
+}
+#course #web-develop .course-description p {
+  font-size: 16px;
+  color: #a4a4a4;
+}
+#course #Android {
+  float: right;
+  margin: 50px 0px;
+  background-color: white;
+  box-shadow: 5px 5px 8px #dddddd;
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+}
+#course #Android h1 {
+  text-align: center;
+  font-size: 62px;
+  font-weight: bold;
+}
+#course #Android img {
+  width: 100%;
+  height: 100%;
+}
+#course #Android .course-description h2 {
+  font-size: 38px;
+  font-weight: bold;
+}
+#course #Android .course-description p {
+  font-size: 16px;
+  color: #a4a4a4;
+}
+#course .course-info {
+  float: right;
+}
+#course .course-info .info form button {
+  color: #fdc735;
+}
+#course .course-info .info form button:hover, #course .course-info .info form button:focus {
   color: white;
-}
-#contact-us-content .contact-us-forms .contact-form button:hover, #contact-us-content .contact-us-forms .contact-form button:focus {
-  background-color: #fdd25d;
-  border-color: #fdd25d;
 }
